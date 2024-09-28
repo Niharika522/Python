@@ -1,0 +1,12 @@
+s=input().strip()
+all_r=s.replace("W","R")
+all_b=s.replace("W","B")
+bad_r=0
+bad_b=0
+for i in range(len(all_r)-1):
+if all_r[i]!=all_r[i+1]:
+bad_r+=1
+for i in range(len(all_b)-1):
+if all_b[i]!=all_b[i+1]:
+bad_b+=1
+print(min(bad_r,bad_b))￼Enter
